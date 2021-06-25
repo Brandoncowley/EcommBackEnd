@@ -13,16 +13,10 @@ Category.init(
     id: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      primaryKey: true
+      primaryKey: true,
+      autoIncrement: true
     },
-    
-    //add ID
-    // define columns
-    // CREATE TABLE category (
-    //   id INT AUTO_INCREMENT NOT NULL,
-    //   category_name VARCHAR(50) NOT NULL,
-    //   PRIMARY KEY (id)
-    // )
+   
   },
   {
     sequelize,
