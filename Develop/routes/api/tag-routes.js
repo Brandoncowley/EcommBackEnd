@@ -70,7 +70,7 @@ router.put('/:id', async (req, res) => {
       return;
     }
 
-    res.status(200).json(tagData);
+    res.status(200).json("Tag Updated!");
   } catch (err) {
     res.status(500).json(err);
   }
@@ -90,7 +90,7 @@ router.delete('/:id', async (req, res) => {
       return;
     }
 
-    res.status(200).json(tagData);
+    res.status(200).json("Tag Deleted From Table");
   } catch (err) {
     res.status(500).json(err);
   }
